@@ -1,0 +1,25 @@
+{
+    "name": "OpenPlatformPHP/OpenPlatform",
+    "description": "PHP library for utzlizing the The Guardian Newspaper's Open Platform ",
+    "license": "GPL",
+    "keywords": ["openPlatform"],
+    "authors": [
+        {
+            "name": "Temi Jegede",
+            "email": "temi_jegede@hotmail.co.uk"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "4.*",
+        "symfony/yaml": "2.6.7"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "OpenPlatform\\": "src/OpenPlatform",
+            "OpenPlatform\\Tests\\": "tests"
+        }
+    }
+}
