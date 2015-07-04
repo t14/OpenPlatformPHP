@@ -1,5 +1,5 @@
 {
-    "name": "OpenPlatformPHP/OpenPlatform",
+    "name": "t14/open-platform-php",
     "description": "PHP library for utzlizing the The Guardian Newspaper's Open Platform ",
     "license": "GPL",
     "keywords": ["openPlatform"],
