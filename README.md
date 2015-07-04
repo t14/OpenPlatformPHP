@@ -1,4 +1,5 @@
 Master [![Build Status](https://travis-ci.org/t14/OpenPlatformPHP.svg?branch=master)](https://travis-ci.org/t14/OpenPlatformPHP.svg?branch=master)
+Dev [![Build Status](https://travis-ci.org/t14/OpenPlatformPHP.svg?branch=dev)](https://travis-ci.org/t14/OpenPlatformPHP.svg?branch=dev)
 
 #Guardian Open Platform PHP Client
 
