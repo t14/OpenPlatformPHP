@@ -1,3 +1,5 @@
+Master [![Build Status](https://travis-ci.org/t14/OpenPlatformPHP.svg?branch=master)](https://travis-ci.org/t14/OpenPlatformPHP.svg?branch=master)
+
 #Guardian Open Platform PHP Client
 
 This is a PHP based client library that aims to provide an easy to use option for consuming
