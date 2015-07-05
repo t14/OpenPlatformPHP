@@ -1,4 +1,5 @@
 Master [![Build Status](https://travis-ci.org/t14/OpenPlatformPHP.svg?branch=master)](https://travis-ci.org/t14/OpenPlatformPHP.svg?branch=master)
+Dev [![Build Status](https://travis-ci.org/t14/OpenPlatformPHP.svg?branch=dev)](https://travis-ci.org/t14/OpenPlatformPHP.svg?branch=dev)
 
 #Guardian Open Platform PHP Client
 
@@ -9,7 +10,15 @@ The Guardian NewsPapers [Open Platform API](http://open-platform.theguardian.com
 Before you get started you need to get an api key which you can obtain [here](http://open-platform.theguardian.com/access/)
 
 ##Installation
-Clone this repo and run `composer install`
+Using composer ``composer require t14/open-platform-php``
+Create a config.yml file like the one below and add your api key.
+```
+# Open Platform Config
+- host:
+  - 'http://content.guardianapis.com'
+- apiKey:
+  - 'YOUR API KEY HERE'
+```
 
 ##Basic Usage
 Edit the config.yml file and replace the api key with your own.
@@ -19,7 +28,7 @@ You can choose to use a different YAML config file (see the config section below
 require 'vendor/autoload.php';
 use OpenPlatform\Client;
 
-$op = new Client();
+$op = new Client('DIR_OF_CONFIG_FILE/config.yml');
 
 $op->endpoint('search')
    ->filter('politics', 'section')
@@ -59,15 +68,6 @@ $op->endpoint('search')
     ->filter('newest', 'order-by')
     ->filter(1, 'page')
     ->getContent()->getBody();
-```
-
-##Config
-You can edit the config/config.yml file and replace the API key value with your own.
-If you would like to use a different config file you can pass the location of the config file when you
-instantiate the class. The config file will need to be in the same structure as the one provided in config/config.yml
-
-```php
-$op = new Client('dir/dir/config.yml');
 ```
 
 ##Useful resources

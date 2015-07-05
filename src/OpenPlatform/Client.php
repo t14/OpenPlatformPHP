@@ -2,14 +2,6 @@
 
 namespace OpenPlatform;
 
-/**
- * @todo 1. path endpoint should not be added to url
- * @todo 2. linitng standards
- * @tddo 3. docblocks and Readme.
- *
- * @todo 4. tidy up remove unsued files and code, test everything
- * @todo 5  upload to github and packagist
- */
 require 'vendor/autoload.php';
 use GuzzleHttp\Exception\RequestException;
 use Symfony\Component\Yaml\Exception\ParseException;
