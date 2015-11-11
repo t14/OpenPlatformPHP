@@ -1,0 +1,5 @@
+# Open Platform Config
+- host:
+  - 'http://content.guardianapis.com'
+- apiKey:
+  - 'YOUR API KEY HERE'

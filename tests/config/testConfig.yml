@@ -1,0 +1,5 @@
+# Open Platform Config
+- host:
+  - 'TESTHOST'
+- apiKey:
+  - 'TESTAPIKEY'
