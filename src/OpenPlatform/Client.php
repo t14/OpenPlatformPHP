@@ -4,7 +4,6 @@ namespace OpenPlatform;
 
 require 'vendor/autoload.php';
 use GuzzleHttp\Exception\RequestException;
-use Symfony\Component\Yaml\Exception\ParseException;
 use OpenPlatform\Validation\Filters\FiltersValidationFactory;
 use OpenPlatform\Validation\Endpoints\EndpointsValidationFactory;
 
@@ -20,7 +19,6 @@ class Client
     protected $endpoint;
     protected $filter = [];
     protected $validate;
-    const CONFIG_DIR = 'config/config.yml';
 
     /**
      * Sets config.
